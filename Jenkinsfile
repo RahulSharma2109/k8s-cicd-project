@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/RahulSharma2109/k8s-cicd-project.git'
+                git branch: 'main', url: 'https://github.com/RahulSharma2109/k8s-cicd-project.git'
             }
         }
 
